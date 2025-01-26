@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Define the type for the props
 interface FilterProps {
   onFilterChange: (filterType: string, value: string) => void; // Function type for handling the filter change
 }

@@ -1,6 +1,12 @@
 import React from 'react';
 
-const ProductCard = ({ image, name, price }) => {
+interface ProductCardProps {
+  image: string;
+  name: string;
+  price: number;
+}
+
+const ProductCard: React.FC<ProductCardProps> = ({ image, name, price }) => {
   const handleAddToCart = () => {
     alert(`${name} has been added to your cart.`);
   };
